@@ -1,4 +1,3 @@
-import './App.css';
 
 import {Titlebanner,Introduction, ExplorePlatform, CustomerDetail , Review , Document ,SuperMerchants,ProjectDetail ,CustomerValue ,Pricing,Footer, RequestDemo} from "./components"
 function App() {
