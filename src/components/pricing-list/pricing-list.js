@@ -13,7 +13,7 @@ const PriceList = () => {
         <Styled.Head></Styled.Head>
         {TITLE_MOCK.map(({ icon, title }) => (
           <Styled.Head key={icon}>
-            <Styled.Icons src={icon} alt={title} />
+            <Styled.Icons src={process.env.PUBLIC_URL+icon} />
             <Styled.Title>{title}</Styled.Title>
             {isLaptop && <Button type="buttonStyleDark">Request Demo</Button>}
           </Styled.Head>
@@ -22,43 +22,38 @@ const PriceList = () => {
       <Styled.Body>
         <Styled.SubTitle>Core Features</Styled.SubTitle>
         {LIST_MOCK.coreFeatures.map(
-          ({ title, isStandard, isProfessional, isEnterprise }) => (
+          ({ title, standard, professional, enterprise }) => (
             <Styled.Row key={title}>
-              <Styled.Col key={title}>{title}</Styled.Col>
+              <Styled.Column key={title}>{title}</Styled.Column>
               <Styled.WrappedDiv>
-                <Styled.Col>
+                <Styled.Column>
                   {isMobile && <Styled.Item>is Standard</Styled.Item>}
-                  { isStandard ?
-                    <Styled.Icons
-                    src={process.env.PUBLIC_URL+`/image/tick.svg`}
-                  />
+                  { standard ?<Styled.Icons src={process.env.PUBLIC_URL+`/image/tick.svg`}/>
                   :<Styled.Icons
                   src={process.env.PUBLIC_URL+`/image/null.svg`}
                 />
                 }
-                </Styled.Col>
+                </Styled.Column>
 
-                <Styled.Col>
+                <Styled.Column>
                   {isMobile && <Styled.Item>is Professional</Styled.Item>}
-                  { isProfessional ?<Styled.Icons
-                    src={process.env.PUBLIC_URL+`/image/tick.svg`}
-                    alt="is Professional"
-                  />:
+                  { professional ?<Styled.Icons
+                    src={process.env.PUBLIC_URL+`/image/tick.svg`} />:
                   <Styled.Icons
                     src={process.env.PUBLIC_URL+`/image/null.svg`}
                   />
                   }
-                </Styled.Col>
-                <Styled.Col>
+                </Styled.Column>
+                <Styled.Column>
                   {isMobile && <Styled.Item>is Enterprise</Styled.Item>}
-                  {isEnterprise ? <Styled.Icons
+                  {enterprise ? <Styled.Icons
                     src={process.env.PUBLIC_URL+`/image/tick.svg`}
                   />:
                   <Styled.Icons
                     src={process.env.PUBLIC_URL+`/image/null.svg`}
                   />
                   }
-                </Styled.Col>
+                </Styled.Column>
               </Styled.WrappedDiv>
             </Styled.Row>
           )
@@ -66,66 +61,49 @@ const PriceList = () => {
 
         <Styled.SubTitle>Team Support</Styled.SubTitle>
         {LIST_MOCK.teamSupport.map(
-          ({ title, isStandard, isProfessional, isEnterprise }) => (
+          ({ title, standard, professional, enterprise }) => (
             <Styled.Row>
-              <Styled.Col key={title}>{title}</Styled.Col>
+              <Styled.Column key={title}>{title}</Styled.Column>
               <Styled.WrappedDiv>
-                <Styled.Col>
+                <Styled.Column>
                   {isMobile && <Styled.Item>is Standard</Styled.Item>}
-                  { isStandard ?
-                    <Styled.Icons
-                    src= {process.env.PUBLIC_URL+`/image/tick.svg`}
-                    
-                  /> 
-                  :
-                  <Styled.Icons
-                    src= {process.env.PUBLIC_URL+`/image/null.svg`}
-                  /> 
+                  { standard ?<Styled.Icons src= {process.env.PUBLIC_URL+"/image/tick.svg"}/> 
+                  :<Styled.Icons
+                    src= {process.env.PUBLIC_URL+"/image/null.svg"}/> 
                 }
-                </Styled.Col>
-                <Styled.Col>
+                </Styled.Column>
+                <Styled.Column>
                   {isMobile && <Styled.Item>is Professional</Styled.Item>}
-                  {isProfessional? 
-                  <Styled.Icons
-                  src= {process.env.PUBLIC_URL+"/image/tick.svg"}
-                />
-                 :
-                  <Styled.Icons
-                    src= {process.env.PUBLIC_URL+"/image/null.svg"}
-                  />
+                  {professional? 
+                  <Styled.Icons src= {process.env.PUBLIC_URL+"/image/tick.svg"}/>:
+                  <Styled.Icons src= {process.env.PUBLIC_URL+"/image/null.svg"}/>
                   }
-                </Styled.Col>
-                <Styled.Col>
+                </Styled.Column>
+                <Styled.Column>
                   {isMobile && <Styled.Item>is Enterprise</Styled.Item>}
-                  {
-                    isEnterprise ?
-                    <Styled.Icons
-                    src={process.env.PUBLIC_URL+"image/tick.svg"}
-                  /> :
-                  <Styled.Icons
-                    src={process.env.PUBLIC_URL+"image/null.svg"}
-                  /> 
+                  {enterprise ?<Styled.Icons src={process.env.PUBLIC_URL+"/image/tick.svg"}/> :
+                  <Styled.Icons src={process.env.PUBLIC_URL+"/image/null.svg"} /> 
                   }
-                </Styled.Col>
+                </Styled.Column>
               </Styled.WrappedDiv>
             </Styled.Row>
           )
         )}
         {isLaptop && (
           <Styled.Row>
-            <Styled.Col></Styled.Col>
-            <Styled.Col>
+            <Styled.Column></Styled.Column>
+            <Styled.Column>
               <Styled.QuotedPrice>$100/month</Styled.QuotedPrice>
               <Button type="buttonStyleDark">Select this plan</Button>
-            </Styled.Col>
-            <Styled.Col>
+            </Styled.Column>
+            <Styled.Column>
               <Styled.QuotedPrice>$2000/month</Styled.QuotedPrice>
               <Button type="buttonStyleDark">Select this plan</Button>
-            </Styled.Col>
-            <Styled.Col>
+            </Styled.Column>
+            <Styled.Column>
               <Styled.QuotedPrice>$3,500/month</Styled.QuotedPrice>
               <Button type="buttonStyleDark">Select this plan</Button>
-            </Styled.Col>
+            </Styled.Column>
           </Styled.Row>
         )}
       </Styled.Body>
