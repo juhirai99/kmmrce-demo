@@ -11,7 +11,7 @@ export const Review = () => {
         <Styled.Container>
           <Styled.doublequote>“</Styled.doublequote>
           <Styled.Comment>
-          <Animated animationIn="slideInDown" animationInDuration={6000} component="div" >
+          <Animated animationIn="zoomIn" animationInDuration={6700} component="div" >
             KMMRCE is an ideal solution for anyone looking to build a bespoke
             e-commerce website. A great foundation has been designed to get you
             started on a fully-fledged storefront 
@@ -19,7 +19,7 @@ export const Review = () => {
             </Animated>
           </Styled.Comment>
           <Styled.doublequote>“</Styled.doublequote>
-          <Animated animationIn="zoomIn" animationInDuration={6000} component="div" >
+          <Animated animationIn="zoomIn" animationInDuration={6800} component="div" >
           <Styled.TowerImg src={process.env.PUBLIC_URL+"/image/image-11.png"} alt="feedback image" />
           </Animated>
           <Styled.givenby>

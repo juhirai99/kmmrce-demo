@@ -8,7 +8,7 @@ export const CustomerValue = () => {
   return (
     <Styled.CustomerValue>
       <Styled.wrapperDiv>
-      <Animated animationIn="fadeInLeft" animationInDuration={6500} component="div" >  
+      <Animated animationIn="fadeInLeft" animationInDuration={8200} component="div" >  
         <Section title="Serving Our Customers" description="Sed magna enim, bibendum a quam eu, commodo consectetur quam. Morbi
             pellentesque eu dolor luctus sagittis, Praesent commodo velit eget urna mollis dignissim." alignLeft/>
        </Animated>     
