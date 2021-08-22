@@ -2,13 +2,16 @@ import React from "react";
 import { MOCK_DATA } from "../../service/services.mock";
 import { Section,Button } from "..";
 import * as Styled from "./customer-value.styles";
+import {Animated} from "react-animated-css";
 
 export const CustomerValue = () => {
   return (
     <Styled.CustomerValue>
       <Styled.wrapperDiv>
+      <Animated animationIn="fadeInLeft" animationInDuration={6500} component="div" >  
         <Section title="Serving Our Customers" description="Sed magna enim, bibendum a quam eu, commodo consectetur quam. Morbi
             pellentesque eu dolor luctus sagittis, Praesent commodo velit eget urna mollis dignissim." alignLeft/>
+       </Animated>     
       </Styled.wrapperDiv>
       <Styled.Div>
         {MOCK_DATA.map(({ icon, title, desc }) => (
