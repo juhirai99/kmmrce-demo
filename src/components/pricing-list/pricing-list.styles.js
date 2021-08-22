@@ -52,7 +52,7 @@ export const WrappedDiv = styled.div`
 `;
 
 export const Icons = styled.img``;
-export const Column = styled.td((props) => {
+export const Column  = styled.td((props) => {
   return mediaQuery({
     "&:first-child": {
       textAlign: "left",

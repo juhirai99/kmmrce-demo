@@ -70,7 +70,7 @@ export const LIST_MOCK = {
       standard: true,
       professional: true,
       enterprise: true,
-    },
+     },
     {
       title: "Eu dolor luctus",
       standard: true,

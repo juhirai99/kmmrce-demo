@@ -88,7 +88,7 @@ const PriceList = () => {
               </Styled.WrappedDiv>
             </Styled.Row>
           )
-        )}
+         )}
         {isLaptop && (
           <Styled.Row>
             <Styled.Column></Styled.Column>

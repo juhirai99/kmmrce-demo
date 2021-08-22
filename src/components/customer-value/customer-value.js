@@ -13,7 +13,7 @@ export const CustomerValue = () => {
       <Styled.Div>
         {MOCK_DATA.map(({ icon, title, desc }) => (
           <Styled.ValueDiv key={title}>
-            <Styled.Image src={process.env.PUBLIC_URL+icon} alt={title} />
+            <Styled.Image src={process.env.PUBLIC_URL+ icon} alt={title} />
             <Styled.CustomerValueTitle>{title}</Styled.CustomerValueTitle>
             <Styled.CustomerValueDesc>{desc}</Styled.CustomerValueDesc>
             <Button type="buttonStyleWhite">Request Demo</Button>
