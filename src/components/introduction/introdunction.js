@@ -14,8 +14,7 @@ export const Introduction = () => {
       <Styled.Introdiv>
       <Animated animationIn="fadeInLeft" animationInDuration={2000} component="div" >
         <Styled.Heading>
-          <Styled.coloredSpan>
-            KMMRCE
+          <Styled.coloredSpan>KMMRCE
             </Styled.coloredSpan> is an enterprise 
           <Styled.paragraph>level digital platform that 
           </Styled.paragraph>
