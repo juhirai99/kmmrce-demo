@@ -15,7 +15,7 @@ export const Introduction = () => {
       <Animated animationIn="fadeInLeft" animationInDuration={2000} component="div" >
         <Styled.Heading>
           <Styled.coloredSpan>
-          <Typed strings={['KMMRCE']} typeSpeed={50}  loop={true}/>
+            KMMRCE
             </Styled.coloredSpan> is an enterprise 
           <Styled.paragraph>level digital platform that 
           </Styled.paragraph>
