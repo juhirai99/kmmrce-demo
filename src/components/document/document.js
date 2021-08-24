@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../button/button";
 import * as Styled from "./document.styles";
+import Typed from 'react-typed';
 
 export const Document = () => {
   return (
@@ -9,7 +10,10 @@ export const Document = () => {
               data-aos-offset="500"
               data-aos-duration="1000">
         <Styled.Title>Case Study</Styled.Title>
-        <Styled.Subtitle>Created with KMMRCE: Watch <Styled.Paragraph> 1010</Styled.Paragraph></Styled.Subtitle>
+        <Styled.Subtitle>          
+          <Typed strings={['Created with KMMRCE: Watch 1010']} typeSpeed={50}  loop={true}/>
+          
+          </Styled.Subtitle>
 
         <Styled.Description>
         Disrupting and democratizing healthcare. Butterfly’s ambitious,

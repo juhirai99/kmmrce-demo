@@ -2,7 +2,7 @@ import React from "react";
 
 import { Wrapper } from "../wrapper/wrapper";
 import * as Styled from "./review.styles";
-import {Animated} from "react-animated-css";
+import Typed from 'react-typed';
 
 export const Review = () => {
   return (
@@ -18,6 +18,7 @@ export const Review = () => {
             e-commerce website. A great foundation has been designed to get you
             started on a fully-fledged storefront 
             with minimal effort.
+            
           </Styled.Comment>
           <Styled.doublequote>“</Styled.doublequote>
           <Styled.TowerImg src={process.env.PUBLIC_URL+"/image/image-11.png"} alt="feedback image"  
@@ -26,11 +27,13 @@ export const Review = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in"
           />
-          <Styled.givenby data-aos="zoom-in-up"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in">
-            Tyler Hilderband, Head of Engineering at patch
+          <Styled.givenby >
+          <Typed
+                    strings={['Tyler Hilderband, Head of Engineering at patch']}
+                    typeSpeed={40}  loop={true}
+
+                />
+
           </Styled.givenby>
         </Styled.Container>
       </Wrapper>

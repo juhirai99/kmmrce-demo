@@ -4,6 +4,7 @@ import * as Styled from "./introduction.styles";
 import {Animated} from "react-animated-css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Typed from 'react-typed';
 
 export const Introduction = () => {
   const notify = () => toast("Request Sumbitted");
@@ -13,7 +14,9 @@ export const Introduction = () => {
       <Styled.Introdiv>
       <Animated animationIn="fadeInLeft" animationInDuration={2000} component="div" >
         <Styled.Heading>
-          <Styled.coloredSpan>KMMRCE</Styled.coloredSpan> is an enterprise 
+          <Styled.coloredSpan>
+          <Typed strings={['KMMRCE']} typeSpeed={50}  loop={true}/>
+            </Styled.coloredSpan> is an enterprise 
           <Styled.paragraph>level digital platform that 
           </Styled.paragraph>
           provides a turnkey solution to online retailing.

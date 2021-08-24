@@ -19,7 +19,7 @@ ${mediaQuery({ marginLeft: ["25%", "2%"] })};
 export const Subtitle = styled.h3` 
 ${mediaQuery({ maxWidth: ["100%", "70%"] })}; 
 ${mediaQuery({ marginLeft: ["25%", "2%"] })};
-font-size: 3.5em; 
+font-size: 3.8em; 
 margin-top:0px; 
 font-family :"yellixregular, sans-serif";
  font-weight : 300;`;
