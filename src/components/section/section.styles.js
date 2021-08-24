@@ -21,18 +21,20 @@ export const Description = styled.span(() => {
 });
 
 export const Title = styled.h2`
-  font-weight: 300;  
-  font-size: 20px;
-  font-family: "akkurat-monoregular";
+  font-weight: 100;  
+  font-size: 28px;
+  font-family: "yellixregular, sans-serif",
   width: 100%;
   text-align: ${(props) => (props.alignLeft ? "left" : "center")};
 `;
 
 export const Subtitle = styled.h3(() => {
   return mediaQuery({
-    fontSize: [`20px`,`22px`,],
+    fontSize: [`20px`,`30px`,],
     paddingBottom: [`34px`],
     maxWidth: ["100%", "60%"],
+    fontFamily: "yellixregular, sans-serif",
+    fontWeight : "300"
   });
 });
 
