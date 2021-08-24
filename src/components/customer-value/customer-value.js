@@ -2,7 +2,6 @@ import React from "react";
 import { MOCK_DATA } from "../../service/services.mock";
 import { Section,Button } from "..";
 import * as Styled from "./customer-value.styles";
-import {Animated} from "react-animated-css";
 
 export const CustomerValue = () => {
   return (

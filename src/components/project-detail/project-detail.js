@@ -3,8 +3,8 @@ import * as Styled from "./project-detail.styles";
 
 export const ProjectDetail = () => (
     <Styled.ProjectDetail>
-     <Styled.ImageDiv data-aos="fade-right" data-aos-offset="1000"
-          data-aos-duration="1000"
+     <Styled.ImageDiv data-aos="fade-right" data-aos-offset="1100"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out">
        <Styled.ImageText>
        Duis aute irure dolor in reprehenderit in voluptate velit 
