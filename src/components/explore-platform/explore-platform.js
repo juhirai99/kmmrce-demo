@@ -21,13 +21,13 @@ export const ExplorePlatform = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"/>
           <Styled.Img src={process.env.PUBLIC_URL+'/image/image-3.png'} data-aos="fade-up"
-              data-aos-offset="100"
+              data-aos-offset="200"
               data-aos-delay="50"
-              data-aos-duration="500"
+              data-aos-duration="1000"
               data-aos-easing="ease-in-out"/>
           <Styled.Img  src={process.env.PUBLIC_URL+'/image/image-6.png'} data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="500"
+              data-aos-offset="200"
+              data-aos-duration="1000"
               data-aos-easing="ease-in-out"/>
           <Styled.Img src={process.env.PUBLIC_URL+'/image/image-5.png'} 
           data-aos="fade-up"

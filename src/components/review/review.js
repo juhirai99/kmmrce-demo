@@ -12,7 +12,7 @@ export const Review = () => {
           <Styled.doublequote>“</Styled.doublequote>
           <Styled.Comment data-aos="flip-up"
             data-aos-offset="200"
-            data-aos-duration="500"
+            data-aos-duration="1000"
             data-aos-easing="ease-in">
             KMMRCE is an ideal solution for anyone looking to build a bespoke
             e-commerce website. A great foundation has been designed to get you
@@ -22,12 +22,12 @@ export const Review = () => {
           <Styled.doublequote>“</Styled.doublequote>
           <Styled.TowerImg src={process.env.PUBLIC_URL+"/image/image-11.png"} alt="feedback image"  
           data-aos="zoom-in-up"
-          data-aos-offset="100"
-          data-aos-duration="500"
+          data-aos-offset="200"
+          data-aos-duration="1000"
           data-aos-easing="ease-in"
           />
           <Styled.givenby data-aos="zoom-in-up"
-          data-aos-offset="100"
+          data-aos-offset="200"
           data-aos-duration="1000"
           data-aos-easing="ease-in">
             Tyler Hilderband, Head of Engineering at patch
