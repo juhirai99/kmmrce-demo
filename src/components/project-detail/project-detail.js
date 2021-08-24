@@ -3,7 +3,9 @@ import * as Styled from "./project-detail.styles";
 
 export const ProjectDetail = () => (
     <Styled.ProjectDetail>
-     <Styled.ImageDiv>
+     <Styled.ImageDiv data-aos="fade-right" data-aos-offset="1000"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
        <Styled.ImageText>
        Duis aute irure dolor in reprehenderit in voluptate velit 
         </Styled.ImageText> 
@@ -17,7 +19,10 @@ export const ProjectDetail = () => (
       <Styled.Text>Bidendum a quam eu</Styled.Text>  
     <Styled.Image src={process.env.PUBLIC_URL + '/image/project.jpeg'}></Styled.Image>
     </Styled.ImageDiv> 
-    <Styled.wrapperDiv>
+    <Styled.wrapperDiv data-aos="fade-left" data-aos-offset="1100"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
     <Styled.header>Lorem ipsum dolor sit  amet, consectetur adipiscing elit, sed do</Styled.header>
     <Styled.Span>
      Stay up to date with the feed

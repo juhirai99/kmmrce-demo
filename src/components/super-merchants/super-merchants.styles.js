@@ -1,18 +1,22 @@
 import styled from "@emotion/styled";
 
+const image = process.env.PUBLIC_URL+ "/image/image-14.png"
+
+
 export const Merchants = styled.div`
-background-image: url("/image/image-14.png");
-background-size: cover;
+display: flex;
+align-items: center;
+background-image: url(${image});
+background-size: contain;
 background-blend-mode: overlay;
 background-color: #4B42AD;
 color: #fff;
-height: 100vh;
-display: flex;
-align-items: center; 
+min-height: 1000px;
+background-size: 100% 100%;
+
 `;
 
 export const wrapperDiv = styled.div`
-
 `
 
 export const h2 = styled.h2`

@@ -27,7 +27,9 @@ export const Heading = styled.h2(() => {
     marginBottom: [`16px`],
     maxWidth: ["100%", "80%"],
     fontSize: [`21px`,`26px`,],
-    fontWeight: 600,
+    fontWeight: 500,
+    fontFamily: "yellixregular,sans-serif"
+
   });
 });
 
@@ -38,14 +40,15 @@ export const Images = styled.img`
   margin-right: 4px;
 `;
 export const Description = styled.span`
-font-size : 30px
-font-weight : 400
+font-size : 22px;
+font-weight : 400;
+fontFamily: "yellixregular,sans-serif"
 `;
 
 export const Subtitle = styled.p`
   margin-bottom: 4px;
   font-size : 18px;
-  padding-bottom :15px
+  padding-bottom :15px;
 `;
 export const Item = styled.li`
   margin-bottom: 4px;
@@ -54,7 +57,7 @@ export const Item = styled.li`
 `;
 
 export const List = styled.ul`
-margin-left : -38px;
+margin-left :-38px
 `;
 
 export const Line = styled.hr`

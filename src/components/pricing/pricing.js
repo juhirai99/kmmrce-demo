@@ -6,7 +6,7 @@ import FeaturesTable from "../pricing-list/pricing-list";
 
 export const Pricing = () => {
   return (
-    <Styled.background>
+    <Styled.background >
       <Wrapper>
         <Section
           title="Features &amp; Solutions"

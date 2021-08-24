@@ -1,19 +1,23 @@
 import React from "react";
 import { MOCK_DATA } from "../../service/CustomerDetail.mock";
 import * as Styled from "./customer.styles";
-import {Animated} from "react-animated-css";
 
 export const CustomerDetail = () => {
 
   return (
     <Styled.CustomerDetail>
-      <Animated animationIn="zoomIn" animationInDuration={6000} component="div" >
-      <Styled.ImageDiv>
+      <Styled.ImageDiv data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="200"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out">
           <Styled.Image src={process.env.PUBLIC_URL+"/image/image-15.svg"}/>
       </Styled.ImageDiv>
-      </Animated>
-      <Animated animationIn="zoomIn" animationInDuration={6000} component="div" >
-      <Styled.Div>
+      <Styled.Div data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="200"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out">
 
         <Styled.Heading>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quos
@@ -38,7 +42,6 @@ export const CustomerDetail = () => {
           </Styled.Development>
         ))}
       </Styled.Div>
-      </Animated>
     </Styled.CustomerDetail>
   );
 };

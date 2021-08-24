@@ -1,6 +1,17 @@
 
-import {Titlebanner,Introduction, ExplorePlatform, CustomerDetail , Review , Document ,SuperMerchants,ProjectDetail ,CustomerValue ,Pricing,Footer, RequestDemo} from "./components"
+import {Titlebanner,Introduction, ExplorePlatform, CustomerDetail , Review , Document ,SuperMerchants,ProjectDetail ,CustomerValue ,Pricing,Footer, RequestDemo} from "./components";
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      disable: "phone",
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div className="App">
       <Titlebanner></Titlebanner>

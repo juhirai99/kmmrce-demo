@@ -7,15 +7,20 @@ import {Animated} from "react-animated-css";
 export const CustomerValue = () => {
   return (
     <Styled.CustomerValue>
-      <Styled.wrapperDiv>
-      <Animated animationIn="fadeInLeft" animationInDuration={8200} component="div" >  
+      <Styled.wrapperDiv data-aos="fade-up"
+            data-aos-offset="600"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in">
         <Section title="Serving Our Customers" description="Sed magna enim, bibendum a quam eu, commodo consectetur quam. Morbi
             pellentesque eu dolor luctus sagittis, Praesent commodo velit eget urna mollis dignissim." alignLeft/>
-       </Animated>     
       </Styled.wrapperDiv>
-      <Styled.Div>
+      <Styled.Div >
         {MOCK_DATA.map(({ icon, title, desc }) => (
-          <Styled.ValueDiv key={title}>
+          <Styled.ValueDiv key={title} data-aos="fade-up"
+          data-aos-offset="600"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in">
             <Styled.Image src={process.env.PUBLIC_URL+ icon} alt={title} />
             <Styled.CustomerValueTitle>{title}</Styled.CustomerValueTitle>
             <Styled.CustomerValueDesc>{desc}</Styled.CustomerValueDesc>

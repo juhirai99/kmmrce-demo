@@ -32,7 +32,7 @@ export const givenby = styled.span(() => {
 export const Comment = styled.h2(() => {
   return mediaQuery({
     fontWeight: 510,
-    fontSize: [`25px`,`43px`],
+    fontSize: [`25px`,`48px`],
     textAlign: "center",
     maxWidth: ["100%", "70%"],
     

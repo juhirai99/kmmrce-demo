@@ -6,13 +6,16 @@ export const introduction = styled.div`
   display: flex;
   margin-bottom : 0px;
   margin-left :10px;
+  font-family: yellixregular,sans-serif
+
 `;
 export const Heading = styled.h1`
-font-weight: 530;
-font-size :2.7em
+font-weight: 400;
+font-size :3.5em;
+word-spacing :3px;
 `;
 export const coloredSpan = styled.span`
-color :#4B42AD
+color :#4B42AD;
 `
 export const paragraph = styled.p`
 margin-top :0px;
