@@ -9,11 +9,13 @@ export const Document = () => {
       <Styled.WrapperDiv data-aos="slide-left"
               data-aos-offset="500"
               data-aos-duration="1000">
-        <Styled.Title>Case Study</Styled.Title>
+        <Styled.Title>
+        <Typed strings={['Case Study']} typeSpeed={50}  loop={true}/>
+
+        </Styled.Title>
         <Styled.Subtitle>          
-          <Typed strings={['Created with KMMRCE: Watch 1010']} typeSpeed={50}  loop={true}/>
-          
-          </Styled.Subtitle>
+          Created with KMMRCE: Watch 1010
+        </Styled.Subtitle>
 
         <Styled.Description>
         Disrupting and democratizing healthcare. Butterfly’s ambitious,
