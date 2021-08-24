@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Wrapper, Section } from "..";
 import * as Styled from "./explore-platform.styles";
 import useBreakpoints from "../../hooks/useBreakpoint";
-import {Animated} from "react-animated-css";
 export const ExplorePlatform = () => {
   const { isLaptop } = useBreakpoints();
   return (
