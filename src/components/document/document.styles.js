@@ -36,9 +36,10 @@ padding: 20px 0;
  font-weight :300; 
  word-spacing: 5px;`;
 
-export const caseStudy = styled.img` max-width: 100%;`;
+export const caseStudy = styled.img` width: 100%;`;
 export const ImgDiv= styled.div`
-flex: 1 1 0;`;
+flex: 1 1 0;
+`;
 
 export const ButtonDiv = styled.div`
 ${mediaQuery({ marginLeft: ["25%", "2%"] })};

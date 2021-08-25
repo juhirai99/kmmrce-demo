@@ -39,8 +39,7 @@ export const ExplorePlatform = () => {
       )}
       <Wrapper >
         <Styled.PlatformDiv data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="200"
+              data-aos-offset="100"
               data-aos-duration="500"
               data-aos-easing="ease-in-out"> 
           <Section title="Platform" description="Sell digital or physical inventory, with configurable or simple attributes, in a way that suits your business.">

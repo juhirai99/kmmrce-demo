@@ -3,7 +3,7 @@ import * as Styled from "./project-detail.styles";
 
 export const ProjectDetail = () => (
     <Styled.ProjectDetail>
-     <Styled.ImageDiv data-aos="zoom-in-right" data-aos-offset="1100"
+     <Styled.ImageDiv data-aos="zoom-in-right" data-aos-offset="1000"
           data-aos-duration="500"
           data-aos-easing="ease-in-out">
        <Styled.ImageText>

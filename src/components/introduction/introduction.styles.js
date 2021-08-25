@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { mediaQuery } from "../../styles/styles";
 
 export const introduction = styled.div`
-  ${mediaQuery({ flexDirection: ["column", "row", "row"] })}
+  ${mediaQuery({ flexDirection: ["column", "column", "row"] })}
   display: flex;
   margin-bottom : 0px;
   margin-left :10px;
