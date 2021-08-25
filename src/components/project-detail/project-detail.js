@@ -3,7 +3,7 @@ import * as Styled from "./project-detail.styles";
 
 export const ProjectDetail = () => (
     <Styled.ProjectDetail>
-     <Styled.ImageDiv data-aos="zoom-in-right" data-aos-offset="1000"
+     <Styled.ImageDiv data-aos="zoom-in-right" data-aos-offset="200"
           data-aos-duration="500"
           data-aos-easing="ease-in-out">
        <Styled.ImageText>
@@ -19,7 +19,7 @@ export const ProjectDetail = () => (
       <Styled.Text>Bidendum a quam eu</Styled.Text>  
     <Styled.Image src={process.env.PUBLIC_URL + '/image/project.jpeg'}></Styled.Image>
     </Styled.ImageDiv> 
-    <Styled.wrapperDiv data-aos="zoom-in-left" data-aos-offset="1100"
+    <Styled.wrapperDiv data-aos="zoom-in-left" data-aos-offset="200"
           data-aos-delay="200"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
