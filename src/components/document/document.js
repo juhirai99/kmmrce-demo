@@ -11,10 +11,9 @@ export const Document = () => {
               data-aos-duration="1000">
         <Styled.Title>
         <Typed strings={['Case Study']} typeSpeed={50}  loop={true}/>
-
         </Styled.Title>
         <Styled.Subtitle>          
-          Created with KMMRCE: Watch 1010
+         Created with KMMRCE: Watch 1010
         </Styled.Subtitle>
 
         <Styled.Description>

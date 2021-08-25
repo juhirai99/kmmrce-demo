@@ -9,13 +9,18 @@ export const introduction = styled.div`
   font-family: yellixregular,sans-serif
 
 `;
-export const Heading = styled.h1`
-font-weight: 400;
-font-size :3.5em;
-word-spacing :3px;
+export const Heading = styled.h2`
+font-weight: 300 !Important;
+font-family: yellixregular,sans-serif;
+${mediaQuery({ fontSize: ["25px", "4.3rem"] })}
+${mediaQuery({ lineHeight: ["2.8rem", "4.5rem"] })}
+text-align :left;
+letter-spacing: -1.36px;
 `;
 export const coloredSpan = styled.span`
 color :#4B42AD;
+font-family: yellixregular,sans-serif;
+
 `
 export const paragraph = styled.p`
 margin-top :0px;
@@ -31,6 +36,7 @@ export const Introdiv = styled.div((props) => {
     justifyContent: "center",
     flex: "1 1 0",
     marginBottom :"-6px"
+
   });
 });
 
@@ -46,4 +52,7 @@ ${mediaQuery({ order: [0, 1, 1] })}
   flex: 1 1 0;
   margin: 32px 0;
 `;
+
+
+
 
