@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/kmmrce-demo/static/css/main.cd3ced67.chunk.css",
-    "main.js": "/kmmrce-demo/static/js/main.5e54875b.chunk.js",
-    "main.js.map": "/kmmrce-demo/static/js/main.5e54875b.chunk.js.map",
+    "main.css": "/kmmrce-demo/static/css/main.c909c1dc.chunk.css",
+    "main.js": "/kmmrce-demo/static/js/main.b6156194.chunk.js",
+    "main.js.map": "/kmmrce-demo/static/js/main.b6156194.chunk.js.map",
     "runtime-main.js": "/kmmrce-demo/static/js/runtime-main.7997c716.js",
     "runtime-main.js.map": "/kmmrce-demo/static/js/runtime-main.7997c716.js.map",
     "static/css/2.d45ee21d.chunk.css": "/kmmrce-demo/static/css/2.d45ee21d.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.ec933511.chunk.js.map": "/kmmrce-demo/static/js/2.ec933511.chunk.js.map",
     "index.html": "/kmmrce-demo/index.html",
     "static/css/2.d45ee21d.chunk.css.map": "/kmmrce-demo/static/css/2.d45ee21d.chunk.css.map",
-    "static/css/main.cd3ced67.chunk.css.map": "/kmmrce-demo/static/css/main.cd3ced67.chunk.css.map",
+    "static/css/main.c909c1dc.chunk.css.map": "/kmmrce-demo/static/css/main.c909c1dc.chunk.css.map",
     "static/js/2.ec933511.chunk.js.LICENSE.txt": "/kmmrce-demo/static/js/2.ec933511.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7997c716.js",
     "static/css/2.d45ee21d.chunk.css",
     "static/js/2.ec933511.chunk.js",
-    "static/css/main.cd3ced67.chunk.css",
-    "static/js/main.5e54875b.chunk.js"
+    "static/css/main.c909c1dc.chunk.css",
+    "static/js/main.b6156194.chunk.js"
   ]
 }
