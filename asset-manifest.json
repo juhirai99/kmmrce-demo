@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kmmrce-demo/static/css/main.c909c1dc.chunk.css",
-    "main.js": "/kmmrce-demo/static/js/main.b6156194.chunk.js",
-    "main.js.map": "/kmmrce-demo/static/js/main.b6156194.chunk.js.map",
+    "main.js": "/kmmrce-demo/static/js/main.7e8d460d.chunk.js",
+    "main.js.map": "/kmmrce-demo/static/js/main.7e8d460d.chunk.js.map",
     "runtime-main.js": "/kmmrce-demo/static/js/runtime-main.7997c716.js",
     "runtime-main.js.map": "/kmmrce-demo/static/js/runtime-main.7997c716.js.map",
     "static/css/2.d45ee21d.chunk.css": "/kmmrce-demo/static/css/2.d45ee21d.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.d45ee21d.chunk.css",
     "static/js/2.ec933511.chunk.js",
     "static/css/main.c909c1dc.chunk.css",
-    "static/js/main.b6156194.chunk.js"
+    "static/js/main.7e8d460d.chunk.js"
   ]
 }
