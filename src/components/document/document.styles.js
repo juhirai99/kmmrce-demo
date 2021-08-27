@@ -22,14 +22,16 @@ ${mediaQuery({ marginLeft: ["25%", "2%"] })};
 ${mediaQuery({ fontSize: ["28px", "3.8rem"] })}; 
 margin-top:0px; 
 font-family :"yellixregular, sans-serif";
- font-weight : 300;`;
+font-weight : 300;`;
 
 export const Description = styled.span`
  display: inline-block; 
 ${mediaQuery({ maxWidth: ["100%", "70%"] })}; 
 ${mediaQuery({ marginLeft: ["25%", "2%"] })};
-font-size: 28px; 
-padding: 20px 0;
+font-size: 22px; 
+padding: 30px 0;
+margin-top:0px;
+padding-top :0px;
  color: #333; 
  line-height :1.0; 
  font-family: "yellixregular",sans-serif; 

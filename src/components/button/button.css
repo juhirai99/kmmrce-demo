@@ -1,7 +1,7 @@
   .buttonStyle{
   border: none;
   padding: 8px 16px;
-  border-radius:16px;
+  border-radius:25px;
   cursor: pointer;
   transition: 0.3s;
   color: white;
@@ -9,6 +9,7 @@
   margin-bottom: 15px;
   width: 11rem;
   height: 2.5rem;
+  
   }
 
   .buttonStyleDark{
@@ -39,4 +40,19 @@
         width: 14rem;
         height: 2.8rem;
 
+    }
+
+    .buttonStyle:hover {
+      color: #fff;
+      background: #333333;
+    }
+
+    .buttonStyleWhite:hover {
+      color: #fff;
+      background: #333333;
+    }
+
+    .buttonStyleDark:hover {
+      color: #fff;
+      background: #333333;
     }

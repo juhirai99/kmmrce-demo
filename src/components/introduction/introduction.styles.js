@@ -4,18 +4,21 @@ import { mediaQuery } from "../../styles/styles";
 export const introduction = styled.div`
   ${mediaQuery({ flexDirection: ["column", "column", "row"] })}
   display: flex;
-  margin-bottom : 0px;
-  margin-left :10px;
-  font-family: yellixregular,sans-serif
-
+  font-family: yellixregular,sans-serif;
 `;
+
+export const wrapper = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+`
 export const Heading = styled.h2`
 font-weight: 300 !Important;
 font-family: yellixregular,sans-serif;
-${mediaQuery({ fontSize: ["25px", "4.3rem"] })}
-${mediaQuery({ lineHeight: ["2.8rem", "4.5rem"] })}
+${mediaQuery({ fontSize: ["25px", "3.8rem"] })}
+${mediaQuery({ lineHeight: ["2.8rem", "3.9rem"] })}
 text-align :left;
-letter-spacing: -1.36px;
+letter-spacing: -0.066px;
 `;
 export const coloredSpan = styled.span`
 color :#4B42AD;
@@ -32,10 +35,14 @@ export const Introdiv = styled.div((props) => {
     borderRight: ["none", `1px solid #acacac`],
     display: "flex",
     flexDirection: "column",
+    flexWrap :"wrap",
     alignItems: ["center", "flex-start"],
-    justifyContent: "center",
+    justifyContent: "center" ,
     flex: "1 1 0",
-    marginBottom :"-6px"
+    marginBottom :"-6px",
+    minWidth:"50%",
+    padding: "0 .9375rem",
+    paddingTop :"0px"
 
   });
 });

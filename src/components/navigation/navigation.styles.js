@@ -1,12 +1,16 @@
 import styled from "@emotion/styled";
 
-export const Navigation = styled.nav``;
+export const Navigation = styled.nav`
+
+`;
 export const List = styled.ul``;
 export const Item = styled.li`
   position: relative;
   display: inline-block;
   margin-right:32px;
-  font-size: 18px;
+  font-family: yellixregular,sans-serif;
+  font-weight: 200;
+  font-size: 15px;
   color: #333;
   padding-bottom: 4px;
   &:after {

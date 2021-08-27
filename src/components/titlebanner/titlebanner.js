@@ -11,7 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Titlebanner = () => {
   const [isOpen, setIsModalOpen] = useState(false);
   const { isLaptop } = useBreakpoints();
-
   const toggleNavigationBar = useCallback(() => {
     setIsModalOpen(!isOpen);
   }, [isOpen]);
@@ -33,8 +32,9 @@ export const Titlebanner = () => {
         <Styled.NavigationDrawer>
           {isOpen && <MobileMenu isOpen={isOpen} />}
         </Styled.NavigationDrawer>
+        
       </Wrapper>
-    </Styled.Banner>
+   </Styled.Banner>
   );
 };
 export default Titlebanner;

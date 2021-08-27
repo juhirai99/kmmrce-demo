@@ -18,7 +18,7 @@ export const Button = ({ type, children }) => {
   const notify = () => toast("Wow so easy!");
 
   return(
-    <button className={buttonStyles} >{children} {'>'}</button>
+    <button className={buttonStyles} >{children} </button>
   )
 }
 
