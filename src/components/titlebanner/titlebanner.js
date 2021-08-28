@@ -1,16 +1,16 @@
 import React, { useCallback, useState } from "react";
 import * as Styled from "./titlebanner.styles";
 import { Wrapper } from "../wrapper/wrapper.styles";
-import {Navigation} from "../navigation/navigation"
 import {MobileMenu} from "../mobile-menu/mobile-menu"
 import {Button} from "../button/button"
-import useBreakpoints from "../../hooks/useBreakpoint";
+import useBreakpoint from "../../hooks/useBreakpoint";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MENU_LIST from "../../service/navigation.mock";
 
 export const Titlebanner = () => {
   const [isOpen, setIsModalOpen] = useState(false);
-  const { isLaptop } = useBreakpoints();
+  const { isLaptop } = useBreakpoint();
   const toggleNavigationBar = useCallback(() => {
     setIsModalOpen(!isOpen);
   }, [isOpen]);
@@ -26,7 +26,16 @@ export const Titlebanner = () => {
                {isOpen && <FontAwesomeIcon icon={faTimes} />}
             </Styled.ButtonDiv>
           )}
-          {isLaptop && <Navigation />}
+          {isLaptop &&
+          <Styled.Navigation>
+          <Styled.List>
+            {MENU_LIST.menu.map(({ name, link }) => (
+                <a href={`${link}`} key={link}><Styled.Item>{name}</Styled.Item></a>
+            ))}
+          </Styled.List>
+        </Styled.Navigation>
+          
+          }
           {isLaptop && <Button type="lightColor">Request Demo</Button>}
         </Styled.BannerWrapper>
         <Styled.NavigationDrawer>

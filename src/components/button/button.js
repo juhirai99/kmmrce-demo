@@ -1,7 +1,6 @@
 import React from "react";
 import "./button.css"
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
   
 export const Button = ({ type, children }) => {
     //change button style
@@ -15,7 +14,6 @@ export const Button = ({ type, children }) => {
     else if(type ==='buttonStyleWhite'){
      buttonStyles = "buttonStyleWhite"
     }   
-  const notify = () => toast("Wow so easy!");
 
   return(
     <button className={buttonStyles} >{children} </button>

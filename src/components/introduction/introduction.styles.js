@@ -32,7 +32,7 @@ margin-bottom :0px
 export const Introdiv = styled.div((props) => {
   return mediaQuery({
     order: [1, 0, 0],
-    borderRight: ["none", `1px solid #acacac`],
+    borderRight: ["none","none" ,`1px solid #acacac`],
     display: "flex",
     flexDirection: "column",
     flexWrap :"wrap",

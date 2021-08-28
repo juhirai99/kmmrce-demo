@@ -8,11 +8,10 @@ export const Pricing = () => {
   return (
     <Styled.background >
       <Wrapper>
-        <Section
+        <Section alignLeft
           title="Features &amp; Solutions"
           description="consectetur quam. Morbi pellentesque eu dolor luctus sagittis. Praesent  commodo velit eget urna mollis dignissim."
-          alignLeft
-        >
+          >
           <FeaturesTable />
         </Section>
       </Wrapper>

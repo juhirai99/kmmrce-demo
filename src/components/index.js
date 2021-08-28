@@ -3,7 +3,6 @@ export * from "./wrapper/wrapper";
 export * from "./section/section";
 export * from "./titlebanner/titlebanner";
 export * from "./mobile-menu/mobile-menu";
-export * from "./navigation/navigation";
 export * from "./introduction/introdunction";
 export * from "./explore-platform/explore-platform";
 export * from "./customer-detail/customer-detail";

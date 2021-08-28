@@ -12,7 +12,6 @@ export const TITLE_MOCK = [
     title: "Enterprise",
   },
 ];
-
 export const LIST_MOCK = {
   coreFeatures: [
     {

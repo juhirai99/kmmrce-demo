@@ -1,33 +1,27 @@
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useState} from "react";
 
-const BREAKPOINTS = [576, 767, 992, 1200];
-
-const isBrowser = () => typeof window !== "undefined";
-
-const getSize = (breakpoints) => {
-  const innerWidth = isBrowser() ? window.innerWidth : 0;
-
+const SCREEN_BREAKPOINTS = [576, 767, 992, 1200];
+const isBrowserFound = () => typeof window !== "undefined";
+const getScreenSize = (breakpoint) => {
+  const innerWidth = isBrowserFound() ? window.innerWidth : 0;
   return {
-    isMobile: innerWidth < breakpoints[1],
-    isPad1: innerWidth >= breakpoints[1] && innerWidth < breakpoints[2],
-    isPad2: innerWidth >= breakpoints[2] && innerWidth < breakpoints[3],
-    isLaptop: innerWidth >= breakpoints[3],
+    isLaptop: innerWidth >= breakpoint[3],
+    isPad1: innerWidth >= breakpoint[1] && innerWidth < breakpoint[2],
+    isPad2: innerWidth >= breakpoint[2] && innerWidth < breakpoint[3],
+    isMobile: innerWidth < breakpoint[1],
   };
 };
 
-export default function useBreakpoints(breakpoints = BREAKPOINTS) {
-  const [device, setDevice] = useState(getSize(breakpoints));
-
-  const changeSize = useCallback(() => {
-    setDevice(getSize(breakpoints));
-  }, [breakpoints]);
-
+export default function useBreakpoint(breakpoint = SCREEN_BREAKPOINTS) {
+  const [deviceType, setDeviceType] = useState(getScreenSize(breakpoint));
+  const resizeSize = useCallback(() => {
+    setDeviceType(getScreenSize(breakpoint));
+  }, [breakpoint]);
   useEffect(() => {
-    window.addEventListener("resize", changeSize);
+    window.addEventListener("resize", resizeSize);
     return () => {
-      window.removeEventListener("resize", changeSize);
+      window.removeEventListener("resize", resizeSize);
     };
-  }, [changeSize]);
-
-  return device;
+  }, [resizeSize]);
+  return deviceType;
 }

@@ -3,10 +3,10 @@ import React from "react";
 import { Button } from "../button/button";
 import { TITLE_MOCK ,LIST_MOCK } from "../../service/price.mock";
 import * as Styled from "./pricing-list.styles";
-import useBreakpoints from "../../hooks/useBreakpoint";
+import useBreakpoint from "../../hooks/useBreakpoint";
 
 const PriceList = () => {
-  const { isLaptop, isMobile } = useBreakpoints();
+  const { isLaptop, isMobile } = useBreakpoint();
    return (
     <Styled.Table>
       <Styled.Row>

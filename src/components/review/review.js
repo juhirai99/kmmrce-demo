@@ -18,7 +18,6 @@ export const Review = () => {
             e-commerce website. A great foundation has been designed to get you
             started on a fully-fledged storefront 
             with minimal effort.
-            
           </Styled.Comment>
           <Styled.doublequote>“</Styled.doublequote>
           <Styled.TowerImg src={process.env.PUBLIC_URL+"/image/image-11.png"} alt="feedback image"  

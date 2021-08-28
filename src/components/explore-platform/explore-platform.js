@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Wrapper, Section } from "..";
 import * as Styled from "./explore-platform.styles";
-import useBreakpoints from "../../hooks/useBreakpoint";
+import useBreakpoint from "../../hooks/useBreakpoint";
 export const ExplorePlatform = () => {
-  const { isLaptop } = useBreakpoints();
+  const { isLaptop } = useBreakpoint();
   return (
     <Styled.Explore >
       { isLaptop && (

@@ -29,7 +29,6 @@ export const ProjectDetail = () => (
     </Styled.Span>
     <Styled.description>Keep track of projects</Styled.description>
     <Styled.LightText>Invite and view your team members</Styled.LightText>
-  
     </Styled.wrapperDiv>  
     </Styled.ProjectDetail>
     );

@@ -14,7 +14,7 @@ export const CustomerValue = () => {
             pellentesque eu dolor luctus sagittis, Praesent commodo velit eget urna mollis dignissim." alignLeft/>
       </Styled.wrapperDiv>
       <Styled.Div >
-        {MOCK_DATA.map(({ icon, title, desc }) => (
+        {MOCK_DATA.map(({ icon, title, description }) => (
           <Styled.ValueDiv key={title} data-aos="fade-up"
           data-aos-offset="600"
           data-aos-delay="50"
@@ -22,7 +22,7 @@ export const CustomerValue = () => {
           data-aos-easing="ease-in">
             <Styled.Image src={process.env.PUBLIC_URL+ icon} alt={title} />
             <Styled.CustomerValueTitle>{title}</Styled.CustomerValueTitle>
-            <Styled.CustomerValueDesc>{desc}</Styled.CustomerValueDesc>
+            <Styled.CustomerValueDesc>{description}</Styled.CustomerValueDesc>
             <Button type="buttonStyleWhite">Request Demo</Button>
           </Styled.ValueDiv>
         ))}
