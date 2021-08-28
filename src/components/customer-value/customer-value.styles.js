@@ -8,9 +8,9 @@ export const CustomerValue = styled.div`
 
 export const ValueDiv = styled.div((props) => {
   return mediaQuery({
-    borderRight: "1px solid #acacac",
+    borderRight:["none", "none" , "1px solid #acacac"] ,
     padding: [`32px`],
-    borderBottom: [`1px solid #acacac`, "none"],
+    borderBottom: [`1px solid #acacac`, "none" ,"none"],
     "&:last-child ": {
       border: "none",
     },
@@ -27,7 +27,7 @@ export const Div = styled.div((props) => {
     padding: [0, `0px 4px`],
     borderTop: "1px solid #acacac",
     display: "flex",
-    flexDirection: ["column", "row"],
+    flexDirection: ["column", "column","row"],
     justifyContent: "center",
     alignItems: "center",
   });
